@@ -1,26 +1,25 @@
 # mocap4ros2_optitrack
 
-[![Build Status](https://travis-ci.com/MOCAP4ROS2-Project/mocap4ros2_vicon.svg?branch=master)](https://travis-ci.com/MOCAP4ROS2-Project/mocap4ros2_vicon)
+[![Build Status](https://travis-ci.com/MOCAP4ROS2-Project/mocap4ros2_optitrack.svg?branch=master)](https://travis-ci.com/MOCAP4ROS2-Project/mocap4ros2_optitrack)
 
-This repository contains the drivers to run the mocap4ros2_project with vicon.
+This repository contains the drivers to run the mocap4ros2_project with optitrack.
 
 **To use and compile this project is obligatory to download first the [mocap_msgs](https://github.com/MOCAP4ROS2-Project/mocap_msgs) repository in your workspace and follow the next instructions:**
 
-## Vicon DataStream SDK
+## OptiTrack NatNet SDK
 
-Get the official binaries released in the official download page [here](https://www.vicon.com/software/datastream-sdk/?section=downloads).
+Get the official binaries released in the official download page [here](https://optitrack.com/support/downloads/developer-tools.html#natnet-sdk).
 
-You can check the documentation [here](https://docs.vicon.com/spaces/viewspace.action?key=DSSDK19).
+You can check the documentation [here](https://v22.wiki.optitrack.com/index.php?title=NatNet_SDK).
 
 ### Installing on Linux
 
-Copy all the libraries to /usr/local/lib and move the headers to /usr/local/include/ViconDataStreamSDK/.
+Copy all the libraries to /usr/local/lib and move the headers to /usr/local/include/optitrack/.
 
 ```
-sudo mv {YOUR_ViconDataStreamSDK}/Linux64/Release/* /usr/local/lib/
-cd /usr/local/include/
-sudo mkdir ViconDataStreamSDK
-sudo mv ../lib/*.h ViconDataStreamSDK/
+sudo mkdir /usr/local/include/optitrack
+sudo mv {YOUR_NatNetSDK}/include/* /usr/local/include/optitrack/ 
+sudo mv {YOUR_NatNetSDK}/lib/* /usr/local/lib/
 ```
 
 Update the `LD_LIBRARY_PATH` environment variable:
@@ -35,13 +34,13 @@ It's convenient to automatically update this environment variable in your bash s
 
 Execute the installer of your distribution (typically Win64).
 
-SDK files are placed to `C:\Program Files\Vicon\DataStream SDK\Win64\CPP` by default, so update the `PATH` environment variable with this SDK path:
+SDK files are placed to `C:\Program Files\?` by default, so update the `PATH` environment variable with this SDK path:
 
-`set PATH=%PATH%;C:\Program Files\Vicon\DataStream SDK\Win64\CPP`
+`set PATH=%PATH%;C:\Program Files\?`
 
 ### Guide
 
-- Connect your computer/laptop to the same network as Vicon system is connected.
+- Connect your computer/laptop to the same network as OptiTrack system is connected.
 
 - Run Nexus (Vicon software) and calibrate cameras (if required).
 
