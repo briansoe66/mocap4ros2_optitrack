@@ -83,7 +83,7 @@ e.g. `host_name` parameter.
 
 # MOCAP4ROS2
 
-This project provides support for ROS2 integration with Vicon cameras (MOCAP systems based on vision) and Technaid TechMCS IMUs (MOCAP systems based on motion sensors).
+This project provides support for ROS2 integration with OptiTrack cameras (MOCAP systems based on vision) and Technaid TechMCS IMUs (MOCAP systems based on motion sensors).
 
 The project [MOCAP4ROS2](https://rosin-project.eu/ftp/mocap4ros2) is funded as a Focused Technical Project by [ROSIN](http://rosin-project.eu/).
 
@@ -101,6 +101,11 @@ More information: <a href="http://rosin-project.eu">rosin-project.eu</a>
 
 This project has received funding from the European Union’s Horizon 2020  
 research and innovation programme under grant agreement no. 732287.
+
+<img src="https://www.flexiv.com/en/assets/logo.png"
+     alt="flexiv_robotics" height="45" align="left" >  
+
+Mocap4Ros2 Optitrack has received support from [Flexiv Robotics](https://www.flexiv.com)
 
 ***
 
