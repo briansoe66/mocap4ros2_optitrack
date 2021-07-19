@@ -103,7 +103,7 @@ This project has received funding from the European Union’s Horizon 2020
 research and innovation programme under grant agreement no. 732287.
 
 <img src="https://www.flexiv.com/en/assets/logo.png"
-     alt="flexiv_robotics" height="45" align="left" >  
+     alt="flexiv_robotics" width="100" align="left" >  
 
 Mocap4Ros2 Optitrack has received support from [Flexiv Robotics](https://www.flexiv.com)
 
